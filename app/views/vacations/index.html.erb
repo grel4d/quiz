@@ -1,1 +1,9 @@
-<h1>Welcome</h1>
+<% @vacations.each do |vacation| %>
+  <div>
+    <h1><%= vacation.name %></h1><br />
+    <i><%= vacation.place %></i><br />
+    <p><%= vacation.feedback %></p><br />
+  </div>
+
+  <hr />
+<% end %>
