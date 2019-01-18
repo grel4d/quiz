@@ -4,5 +4,8 @@ class VacationsController < ApplicationController
     @vacations = Vacation.all
   end
 
+  def new
+    @vacation = Vacation.new
+  end
 
 end
